@@ -33,12 +33,24 @@ spec:
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/try-fcp/k8s-lessons/main/tutorial/fileshare-pvc.yaml
-persistentvolumeclaim/fileshare created
+```
 
+> output
+```
+persistentvolumeclaim/fileshare created
+```
+
+Check PVC status:
+```
 kubectl get pvc
+```
+
+> output
+```
 NAME        STATUS   VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 fileshare   Bound    nfs-pv   20Gi       RWX                           3s
 ```
+
 
 
 Next: [Lesson 3: Pod deployment](03-pod-deployment.md)
