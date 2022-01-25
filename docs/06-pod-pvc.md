@@ -39,7 +39,7 @@ Type 'k9s' to rub K9S
 
 a 'pv' directory in your home directory is the root of the server. Let's create an index file with arbitrary content, e.g.:
 ```
-echo "Welcome to FCP!" > ~/pv/index.html
+echo "Welcome to FCP" > ~/pv/index.html
 ```
 
 Now use port-forwarding to nginx-pv-pod:80 as we did in the previous lesson and try to open our index file on PV:
