@@ -59,4 +59,4 @@ Welcome to FCP
 
 
 
-Next: [Lesson 7: ]()
+Next: [Lesson 7: Configure Ingress on externalIP](07-ingress-extip.md)

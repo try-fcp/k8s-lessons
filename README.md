@@ -38,7 +38,7 @@ For the begginers:
 * [Lesson 4: Exec and run Pod command](docs/04-pod-exec.md)
 * [Lesson 5: Pod port exposing](docs/05-pod-port-exposing.md)
 * [Lesson 6: Pod with PVC](docs/06-pod-pvc.md)
-* [Lesson X: Configure Ingress on externalIP](docs/05-ingress-extip.md)
+* [Lesson 7: Configure Ingress on externalIP](docs/07-ingress-extip.md)
 * [Lesson X: Configure Balancer (metalb) on externalIP](docs/06-metalb-extip.md)
 * [Lesson X: Configure Ingress behind the Balancer on ExrnalIP](docs/07-ingress-metalb-extip.md)
 * [Lesson X: Configure Dashboard](docs/08-ingress-metalb-extip.md)

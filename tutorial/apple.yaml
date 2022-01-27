@@ -1,0 +1,23 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: apple-app
+  labels:
+    app: apple
+spec:
+  containers:
+  - name: apple-app
+    image: hashicorp/http-echo:0.2.3
+    args:
+    - "-text=apple"
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: apple-service
+spec:
+  selector:
+    app: apple
+  ports:
+  # Default port used by the image
+  - port: 5678
