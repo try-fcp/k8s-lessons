@@ -74,6 +74,11 @@ Determine external IP via `external_ipv6`/`external_ipv4` from jail console or `
 kubectl patch svc ingress-nginx-controller -p '{"spec":{"externalIPs":["2a01:4f8:140:918b::8"]}}' -n ingress-nginx
 ```
 
+To check:
+```
+kubectl -n ingress-nginx get svc
+```
+
 > output:
 ```
 service/ingress-nginx-controller patched
