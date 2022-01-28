@@ -68,10 +68,21 @@ ingress.networking.k8s.io/example-ingress created
 
 Patch for ExternalIP
 
-Determine external IP via `external_ipv6`/`external_ipv4` from jail console or `curl -H cid:<CID> https://try-fcp.org/api/v1/status/<CLUSTER`:
+We need to determine FCP IPv6 for your kubernetes cluster first. You can find it out on your cluster status page:
 
 ```
-kubectl patch svc ingress-nginx-controller -p '{"spec":{"externalIPs":["2a01:4f8:140:918b::8"]}}' -n ingress-nginx
+ curl --no-progress-meter -H cid:<CID> https://try-fcp.org/api/v1/status/<CLUSTER> | grep external_ipv6
+```
+
+> output:
+```
+  "external_ipv6": "2a01:4f8:140:918b::9",
+```
+
+Now update the configuration of Ingress SVC for using available address for external listening:
+
+```
+kubectl patch svc ingress-nginx-controller -p '{"spec":{"externalIPs":["2a01:4f8:140:918b::9"]}}' -n ingress-nginx
 ```
 
 To check:
@@ -87,7 +98,7 @@ service/ingress-nginx-controller patched
 Now your applications are available to the entire Internet! From any Internet host:
 
 ```
-curl -6 http://2a01:4f8:140:918b::8/banana
+curl -6 http://[2a01:4f8:140:918b::9]/banana
 ```
 
 > output:
