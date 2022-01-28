@@ -234,6 +234,7 @@ subjects:
     namespace: ingress-nginx
 ---
 # Source: ingress-nginx/templates/controller-service-webhook.yaml
+# use externalIPs from https://try-fcp.org/api/v1/status/<CLUSTER>
 apiVersion: v1
 kind: Service
 metadata:
@@ -248,6 +249,8 @@ metadata:
   namespace: ingress-nginx
 spec:
   type: ClusterIP
+  externalIPs:
+    - 2a01:4f8:140:918b::8
   ports:
     - name: https-webhook
       port: 443
