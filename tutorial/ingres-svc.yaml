@@ -249,8 +249,8 @@ metadata:
   namespace: ingress-nginx
 spec:
   type: ClusterIP
-  externalIPs:
-    - 2a01:4f8:140:918b::8
+#  externalIPs:
+#    - Use_IP_Here
   ports:
     - name: https-webhook
       port: 443
