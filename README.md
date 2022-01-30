@@ -20,15 +20,15 @@ Current restriction:
 
 Components:
 
-* [kubernetes](https://github.com/kubernetes/kubernetes) v1.21.0+
-* [containerd](https://github.com/containerd/containerd) v1.4.4+
-* [coredns](https://github.com/coredns/coredns) v1.8.3+
-* [cni](https://github.com/containernetworking/cni) v0.9.1+
-* [etcd](https://github.com/etcd-io/etcd) v3.4.15+
+* [kubernetes](https://github.com/kubernetes/kubernetes) v1.23.3+
+* [containerd](https://github.com/containerd/containerd) v1.5.9+
+* [coredns](https://github.com/coredns/coredns) v1.8.6+
+* [cni](https://github.com/containernetworking/cni) v1.0.1+
+* [etcd](https://github.com/etcd-io/etcd) v3.5.1+
 
 ## Labs
 
-This tutorial assumes you use Freebernetes cloud [Freebernetes Cloud Platform](https://XXX) (free plan).
+This tutorial assumes you use Freebernetes cloud [Freebernetes Cloud Platform](https://try-fcp.org) (free plan).
 
 For the begginers:
 
@@ -39,7 +39,8 @@ For the begginers:
 * [Lesson 5: Pod port exposing](docs/05-pod-port-exposing.md)
 * [Lesson 6: Pod with PVC](docs/06-pod-pvc.md)
 * [Lesson 7: Configure Ingress on externalIP](docs/07-ingress-extip.md)
-* [Lesson X: Configure Balancer (metalb) on externalIP](docs/06-metalb-extip.md)
+* [Lesson X: Configure Balancer (metalb) on externalIP](docs/08-metalb-extip.md)
+* [Lesson X: Configure ConfigMaps](docs/09-metalb-extip.md)
 * [Lesson X: Configure Ingress behind the Balancer on ExrnalIP](docs/07-ingress-metalb-extip.md)
 * [Lesson X: Configure Dashboard](docs/08-ingress-metalb-extip.md)
 * [Lesson X: Configure VictoriaMetrics/Grafana stack](docs/09-victoriametrics-grafana.md)
@@ -51,4 +52,3 @@ For the begginers:
 For advanced users:
 
 ITSIO, Kiali.io, ...
-
