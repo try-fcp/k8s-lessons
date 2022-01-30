@@ -118,5 +118,12 @@ curl -6 http://[2a01:4f8:140:918b::9]/banana
 banana
 ```
 
+Also, we have configured Ingress to serve port 443 (SSL). However, we have not currently configure certificates, 
+so add a `-k` key for curl if you want to check app via HTTPS://
+
+```
+curl -k -6 https://[2a01:4f8:140:918b::9]/banana
+```
+
 
 Next: [Lesson 8: ]()
