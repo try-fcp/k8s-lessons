@@ -40,6 +40,18 @@ ingress-nginx-controller             NodePort    172.18.0.107   <none>        80
 ingress-nginx-controller-admission   ClusterIP   172.18.0.143   <none>        443/TCP                      22s
 ```
 
+To check ingress-nginx-controller-admission:
+```
+kubectl get -A ValidatingWebhookConfiguration
+```
+
+> output:
+```
+NAME                      WEBHOOKS   AGE
+ingress-nginx-admission   1          2m13s
+```
+
+
 Deploy sample app:
 
 ```
