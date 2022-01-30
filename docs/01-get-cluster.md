@@ -2,7 +2,7 @@
 
 ## Freeberbetes Cloud Platform
 
-This tutorial leverages the [Freebernetes Cloud Platform](https://localhostm/) with the aim of introducing and teaching elementary skills of working with Kubernetes cluster.
+This tutorial leverages the [Freebernetes Cloud Platform](https://try-fcp.org/) with the aim of introducing and teaching elementary skills of working with Kubernetes cluster.
 
 ..
 

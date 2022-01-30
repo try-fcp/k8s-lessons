@@ -3,7 +3,7 @@
 > do not confuse with `port exposing`
 
 You can do a port forward within the `kubetctl` utility and access to POD/service port from your localhost.
-For example, let's start a container with ngink and try to open it on localhost:
+For example, let's start a container with nginx and try to open it on localhost:
 
 
 ```
