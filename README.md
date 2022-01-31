@@ -8,7 +8,7 @@ These lessons are designed and optimized for learning to use a Kubernetes cluste
 
 ## FCP free plan Cluster layout details
 
-The Freebernetes Cloud allows you to get a _free_ installation of Kubernetes _for a short period of time_. Since the cloud is fully funded by the community (crowdfunding model), restrictions and limits may change every month.
+The Freebernetes Cloud allows you to get a _free_ installation of Kubernetes; those instances are meant for learning purposes and thus only live _for a short period of time_ before they are teared down automatically. You can of course spin up new ones later if you want to continue exploring and learning. Since the cloud is fully funded by the community (crowdfunding model), restrictions and limits may change every month.
 
 Current restrictions:
 
