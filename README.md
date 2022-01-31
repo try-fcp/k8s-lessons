@@ -2,7 +2,7 @@
 
 This guide covers some of the use cases for setting up and using the open **Freebernetes Cloud**. The tutorials are not specific to the Freebernetes Cloud as the user is working with a standard _Kubernetes_ installation. However, the examples are adapted to, tested on and applied to the current Freebernetes platform.
 
-These lessons are designed and optimized for learning to use a Kubernetes cluster and to use the Feebernetes Cloud as the most accessible way to try out and get started with Kubernetes.
+These lessons are designed and optimized for learning to use a Kubernetes cluster and to use the Freebernetes Cloud as the most accessible way to try out and get started with Kubernetes.
 
 > The results of this tutorial should not be viewed as production ready, and may receive limited support from the community, but don't let that stop you from learning!
 
