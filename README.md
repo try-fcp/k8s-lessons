@@ -1,22 +1,21 @@
 # Freebernetes Cloud Platform
 
-This guide covers some of the use cases for setting up and using the open Freebernetes cloud. The tutorial are not Freebernetes cloud specific as the user is working with a vanilla kubernetes installation.
-However, the examples are adapted, tested and applied to the current Freebernetes  platform.
+This guide covers some of the use cases for setting up and using the open **Freebernetes Cloud**. The tutorials are not specific to the Freebernetes Cloud as the user is working with a standard _Kubernetes_ installation. However, the examples are adapted to, tested on and applied to the current Freebernetes platform.
 
-these pages are designed and optimized for learning how to use Kubernetes cluster and use Feebernetes cloud as the most accessible way to try kubernetes.
+These lessons are designed and optimized for learning to use a Kubernetes cluster and to use the Freebernetes Cloud as the most accessible way to try out and get started with Kubernetes.
 
 > The results of this tutorial should not be viewed as production ready, and may receive limited support from the community, but don't let that stop you from learning!
 
 ## FCP free plan Cluster layout details
 
-The Freebernetes cloud allows you to get a free installation of Kubernetes for a short period of time. Since the cloud is fully funded by the community (crowdfunding model), restrictions and limits may change every month.
+The Freebernetes Cloud allows you to get a _free_ installation of Kubernetes; those instances are meant for learning purposes and thus only live _for a short period of time_ before they are teared down automatically. You can of course spin up new ones later if you want to continue exploring and learning. Since the cloud is fully funded by the community (crowdfunding model), restrictions and limits may change every month.
 
-Current restriction:
+Current restrictions:
 
-* 1 single master + worker node;
-* 1 master + 2 worker node;
-* Single NFS based PV;
-* External IPv6 address per cluster;
+* 1 single master + worker node
+* 1 master + 2 worker node
+* Single NFS-based PV
+* 1 external IPv6 address per cluster
 
 Components:
 
@@ -28,9 +27,9 @@ Components:
 
 ## Labs
 
-This tutorial assumes you use Freebernetes cloud [Freebernetes Cloud Platform](https://try-fcp.org) (free plan).
+This tutorial assumes you use the Freebernetes Cloud [Freebernetes Cloud Platform](https://try-fcp.org) (free plan).
 
-For the begginers:
+For beginners:
 
 * [Lesson 1: Get cluster](docs/01-get-cluster.md)
 * [Lesson 2: Configuring PVC](docs/02-configuring-pvc.md)
