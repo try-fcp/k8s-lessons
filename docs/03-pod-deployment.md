@@ -1,8 +1,8 @@
 # Using Pods
 
-Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+Pods are the smallest deployable computing units you can create and manage in Kubernetes.
 
-Let's create and run a busybox container
+Let's create and run a BusyBox container:
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/try-fcp/k8s-lessons/main/tutorial/busybox-pod.yaml
@@ -14,15 +14,15 @@ kubectl apply -f https://raw.githubusercontent.com/try-fcp/k8s-lessons/main/tuto
 pod/busybox created
 ```
 
-To watch pods state:
+To view your pod's state, run:
 
 ```
 kubectl get pods -w
 ```
 
-( use a 'Ctrl+c' combination to exit )
+To exit, hit "Ctrl+C"
 
-To check pods status:
+To view your pod's status, run:
 
 ```
 kubectl get pods [-o wide]
@@ -34,7 +34,5 @@ kubectl get pods [-o wide]
 NAME      READY   STATUS    RESTARTS   AGE
 busybox   1/1     Running   0          6s
 ```
-
-
 
 Next: [Lesson 4: Exec and run Pod command](04-pod-exec.md)

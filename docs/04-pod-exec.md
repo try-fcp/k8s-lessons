@@ -1,7 +1,6 @@
-# Exec and run Pod command
+# Exec and run commands
 
-`kubectl exec` allows you to execute a command in a container. Try to exec 'nslookup' command
-in busybox container:
+`kubectl exec` executes a given command in a container. For example, we can run nslookup on Google in our busybox container:
 
 ```
 kubectl exec -ti busybox -- nslookup google.com
@@ -19,7 +18,7 @@ Address: 2a00:1450:4001:812::200e
 ```
 
 If the container has a shell interpreter, 
-you can use this command to enter the container, e.g. try to login into busybox:
+run this command to enter the container:
 
 
 ```
@@ -32,7 +31,7 @@ kubectl exec -ti busybox -- sh
 / #
 ```
 
-Another example: run `my-shell` container from `ubuntu` image and execute `bash`
+To create a container called "my-shell" with a bash prompt from the `ubuntu` image, we use the run command:
 ```
 kubectl run my-shell --rm -i --tty --image ubuntu -- bash
 ```
@@ -42,7 +41,5 @@ Hint:  while the command is being executed, the container will run and you can a
 ```
 kubectl attach my-shell -c my-shell -i -t
 ```
-
-
 
 Next: [Lesson 5: Pod port forwarding](05-pod-port-forwarding.md)

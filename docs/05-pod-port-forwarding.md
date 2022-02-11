@@ -1,10 +1,11 @@
 # Pod port forwarding
 
-> do not confuse with `port exposing`
+<div class="alert alert-warning" role="alert">
+    This is not the same as port exposing!
+</div>
 
-You can do a port forward within the `kubetctl` utility and access to POD/service port from your localhost.
-For example, let's start a container with nginx and try to open it on localhost:
-
+You can do port forward using the `kubetctl` tool and access the pod's service from your localhost.
+For example, let's start a container with nginx and  open it on localhost:
 
 ```
 kubectl run nginx --image=nginx --port=80 --restart=Never
@@ -26,6 +27,8 @@ kubectl get pods
 nginx     1/1     Running   0             17s    172.17.2.5   master1   <none>           <none>
 ```
 
+To map localhost's port 1080 to the pod's port 80, run:
+
 ```
 kubectl port-forward nginx 1080:80
 ```
@@ -37,7 +40,7 @@ Forwarding from 127.0.0.1:1080 -> 80
 Forwarding from [::1]:1080 -> 80
 ```
 
-Now we have an open local `1080` port on v4/v6 loopback interfaces. Try to get something out of it:
+Now we have an open local `1080` port on IPv4/IPv6 loopback interfaces. Test it by running curl: 
 
 ```
 curl http://localhost:1080
@@ -70,7 +73,5 @@ Commercial support is available at
 </body>
 </html>
 ```
-
-
 
 Next: [Lesson 6: Pod with PVC](06-pod-pvc.md)
