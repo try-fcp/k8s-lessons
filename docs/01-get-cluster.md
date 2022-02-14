@@ -52,16 +52,33 @@ Your public key is now saved in a file `~/.ssh/id_ed25519.pub`. Use the line fro
 cat ~/.ssh/id_ed25519.pub
 ```
 
-1) 
+1) copy full pubkey line, without CRLF (single line):
+
 ![pubkey](https://user-images.githubusercontent.com/98359094/153843439-65e158be-5d28-4212-b25b-e669724e40d0.png)
 
-2)
+2) paste pubkey as in 'Pubkey' field:
+ 
 ![pubkey_form](https://user-images.githubusercontent.com/98359094/153843459-ed355ba0-bf66-4d51-8be7-7182323f39c7.png)
 
+A confirmation will be sent to your email. Click on the link and within the next five minutes you will receive a second letter stating that your cluster has been created.
 
+Next, install a `kubectl`, Kubernetes thin client on your system and save the `kubeconfig` from FCP email (Get kubeconfig link) to the directory ~/.kube/ as `config`. Easy way to do it:
+
+1) create `~/.kube` directory if not exist:
+
+```
+mkdir ~/.kube
+```
+
+2) save kubeconfig as ~/.kube/config:
+```
+curl -H cid:c962e388f1726d16343e9de62f9e00c4 https://try-fcp.org/api/v1/kubeconfig/test1 > ~/.kube/config
+```
+
+Now you can work with your cluster directly via `kubectl` tools.
 
 ![cluster-info screenshot](images/cluster-info.png)
 
-
+If it is difficult to install a thin client on your system, or you still do not have an IPv6 address, you can use the automatically created container as a jump host.
 
 Next: [Lesson 2: Configuring PVC](02-configuring-pvc.md)
