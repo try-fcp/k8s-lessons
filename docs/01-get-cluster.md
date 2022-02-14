@@ -79,6 +79,13 @@ Now you can work with your cluster directly via `kubectl` tools.
 
 ![cluster-info screenshot](images/cluster-info.png)
 
-If it is difficult to install a thin client on your system, or you still do not have an IPv6 address, you can use the automatically created container as a jump host.
+If it is difficult to install a thin client on your system, or you still do not have an IPv6 address, you can use the automatically created container as a jump host. How to do it: get the 'ssh_console_string' value from cluster status ( link available in FCP email ):
+
+```
+curl -H cid:c962e388f1726d16343e9de62f9e00c4 https://try-fcp.org/api/v1/status/test1
+```
+
+and use private key for accessing into jump container. Also, this container can serve for easy access to the cluster PV: pay attention to the 'pv' directory in home directory - this is the root of the cluster persistent volume.
+
 
 Next: [Lesson 2: Configuring PVC](02-configuring-pvc.md)
