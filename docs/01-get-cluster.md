@@ -52,6 +52,13 @@ Your public key is now saved in a file `~/.ssh/id_ed25519.pub`. Use the line fro
 cat ~/.ssh/id_ed25519.pub
 ```
 
+1) 
+![pubkey](https://user-images.githubusercontent.com/98359094/153843439-65e158be-5d28-4212-b25b-e669724e40d0.png)
+
+2)
+![pubkey_form](https://user-images.githubusercontent.com/98359094/153843459-ed355ba0-bf66-4d51-8be7-7182323f39c7.png)
+
+
 
 ![cluster-info screenshot](images/cluster-info.png)
 
