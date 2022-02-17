@@ -19,11 +19,11 @@ Current restrictions:
 
 Components:
 
-* [kubernetes](https://github.com/kubernetes/kubernetes) v1.23.3+
-* [containerd](https://github.com/containerd/containerd) v1.5.9+
-* [coredns](https://github.com/coredns/coredns) v1.8.6+
+* [kubernetes](https://github.com/kubernetes/kubernetes) v1.23.4+
+* [containerd](https://github.com/containerd/containerd) v1.6.0+
+* [coredns](https://github.com/coredns/coredns) v1.9.0+
 * [cni](https://github.com/containernetworking/cni) v1.0.1+
-* [etcd](https://github.com/etcd-io/etcd) v3.5.1+
+* [etcd](https://github.com/etcd-io/etcd) v3.5.2+
 
 ## Labs
 
